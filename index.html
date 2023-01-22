@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 13 | Asep Yaman Suryaman</title>
+    <link rel="stylesheet" href="w3.css">
+</head>
+<style>
+    .header{
+        height: 250px;
+        background-image: url('images/jumbotron.png');
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .judul-container{
+        padding-top: 40px;
+        width: 500px;
+    }
+    .judul{
+        font-family: serif;
+        font-size: 40px;
+        letter-spacing: 6px;
+        color: white;
+    }
+    .sub-judul{
+        font-family: serif;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: white;
+        opacity: 0.9;
+
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .w3-card-4{
+        width: 330px;
+        margin-top: 30px;
+    }
+    .header-jasa{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="judul-container">
+            <span class="judul">TUGAS 13</span>
+            <br>
+            <span class="sub-judul">Membuat website dengan animasi dan navigasi. Website ini di design menggunakan framework W3CSS</span>
+        </div>
+        
+    </div>
+    <div class="w3-bar" style="background-color: aliceblue;">
+        <button class="w3-bar-item w3-button" onclick="openKota('welcome')">Home</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('gallery')">Gallery</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('about')">About</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('jasa')">Service</button>
+    </div>
+    <div class="w3-container kota w3-animate-zoom" id="welcome">
+        <center>
+            <img src="images/welcome.jpg" style="width:500px ; height:400px;">
+        </center>
+    </div>
+    <div class="kota" id="gallery" style="display: none;">
+        <center>
+            <h1>Photo Gallery</h1>
+            <br>
+        </center>
+        <div class="w3-row-padding w3-mobile">
+            <div class="w3-third w3-animate-left"><img src="images/img_rr_01.jpg"></div>
+            <div class="w3-third w3-animate-top"><img src="images/mobil.jpg"></div>
+            <div class="w3-third w3-animate-right"><img src="images/img_snowtops.jpg"></div>
+        </div>
+        <div class="w3-row-padding w3-mobile">
+            <p>
+                <div class="w3-third w3-animate-left"><img src="images/img_car.jpg"></div>
+                <div class="w3-third w3-animate-bottom"><img src="images/img_5terre.jpg"></div>
+                <div class="w3-third w3-animate-right"><img src="images/unikom-du.jpg"></div>
+            </p>
+        </div>
+        <div class="w3-row-padding w3-mobile">
+            <p>
+                <div class="w3-third "><img src="images/img_rr_04.jpg"></div>
+                <div class="w3-third w3-animate-opacity"><img src="images/R.jfif"></div>
+                <div class="w3-third "><img src="images/4k-wallpaper-for-pc-13.jpg"></div>
+            </p>
+          </div>
+        <div class="w3-row-padding w3-mobile">
+            <p>
+                <div class="w3-third "><img src="images/nancy2.jpg"></div>
+                <div class="w3-third w3-animate-opacity"><img src="images/nancy3.jpg"></div>
+                <div class="w3-third "><img src="images/nancy.jpg"></div>
+            </p>
+          </div>
+    </div>
+    <div class="w3-container kota w3-animate-bottom" id="about" style="display: none ; width: 100%;">
+        <br><br>
+        <div class="w3-container" style="width: 100%; display: flex; justify-content: center;">
+            <div class="w3-card-4 w3-mobile">
+                <div class="w3-row">
+                    <div class="w3-col s12">
+                        <img src="images/profile.png" style="height:300px; width: 100%;">
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-col s12" style="padding:25px;">
+                        <h3>Asep Yaman Suryaman</h3>
+                        <p>Saya Asep Yaman Suryaman Mahasiswa aktif Universitas Komputer Indonesia dengan <b> NIM 10122004 </b> dan <b> Kelas IF-1</b>. Website ini dibuat sebagai tugas ke 13 Mata Kuliah Pemrograman Web 1 Bapak Taryana. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    
+    <div class="w3-container kota " id="jasa" style="display: none;">
+        <div class="header-jasa w3-animate-top">
+            <h2>Jasa Photography</h2>
+            <p>Platform ini menyediakan jasa berupa Photography untuk keperluan bisnis Anda, agar produk Anda terlihat profesional dan menarik</p>
+        </div>
+        <br><br>
+        <div class="w3-container" style="width: 100%; display: flex; justify-content: center; flex-wrap: wrap; justify-content: space-between;">
+            <div class="w3-card-4 w3-mobile w3-animate-left">
+                <div class="w3-row">
+                    <div class="w3-col s12">
+                        <img src="images/profile.png" style="height:300px; width: 100%;">
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-col s12" style="padding:25px;">
+                        <h3>Newbie</h3>
+                        <table width="100%">
+                            <tr>
+                                <td>Max Photo</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Editing</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Full Service</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Revisi</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><h3>Rp. 100.000</h3></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button class="w3-button w3-orange" style="width:100% ;">Pesan Sekarang</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-card-4 w3-mobile w3-animate-zoom">
+                <div class="w3-row">
+                    <div class="w3-col s12">
+                        <img src="images/profile.png" style="height:300px; width: 100%;">
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-col s12" style="padding:25px;">
+                        <h3>Bussiness</h3>
+                        <table width="100%">
+                            <tr>
+                                <td>Max Photo</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Editing</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Full Service</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Revisi</td>
+                                <td>10x</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><h3>Rp. 1.000.000</h3></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button class="w3-button w3-orange" style="width:100% ;">Pesan Sekarang</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-card-4 w3-mobile w3-animate-right">
+                <div class="w3-row">
+                    <div class="w3-col s12">
+                        <img src="images/profile.png" style="height:300px; width: 100%;">
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-col s12" style="padding:25px;">
+                        <h3>Enterprise</h3>
+                        <table width="100%">
+                            <tr>
+                                <td>Max Photo</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td>Editing</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Full Service</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Revisi</td>
+                                <td>Unlimeted</td>
+                            </tr>
+                            <tr>
+                                <td><h3>Rp. 5.000.000</h3></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button class="w3-button w3-orange" style="width:100% ;">Pesan Sekarang</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    
+<script>
+function openKota(namakota) {
+    var i;
+    var x = document.getElementsByClassName("kota");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
